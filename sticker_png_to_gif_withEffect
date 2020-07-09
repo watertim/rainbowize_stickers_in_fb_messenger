@@ -14,7 +14,7 @@ class SHAFT:
 """
 
 # ENV
-im_name = input("�п�J�Ϥ��ɦW:")
+im_name = input("½Ð¿é¤J¹Ï¤ùÀÉ¦W:")
 im = imageio.imread(im_name)
 # im=im.astype("int32")
 WIDTH_n = int(im.shape[1] // SIZE)
