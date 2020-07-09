@@ -14,7 +14,7 @@ class SHAFT:
 """
 
 # ENV
-im_name = input("½Ð¿é¤J¹Ï¤ùÀÉ¦W:")
+im_name = input("�п�J�Ϥ��ɦW:")
 im = imageio.imread(im_name)
 # im=im.astype("int32")
 WIDTH_n = int(im.shape[1] // SIZE)
@@ -122,7 +122,7 @@ for i in range(0,2):
     imageio.imwrite(".//temp//%d_coshaft.png" % (i), im_list_coshaft[i])
 """
 
-imageio.mimwrite(".//complete.gif", im_list_coshaft, duration=0.04)
+imageio.mimwrite(".//complete.gif", im_list_coshaft, fps=60)
 import os
 PATH = os.path.abspath('.') + "\\"
 os.startfile(PATH+"complete.gif")
